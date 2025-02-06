@@ -1,55 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Join RIZZTER Crypto: The coolest way to invest, trade, and ride the waves of crypto success. IT'S RIZZTER TILL EASTER.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Join RIZZTER Crypto: The coolest way to invest, trade, and ride the waves of crypto success. IT'S RIZZTER TILL EASTER." />
   <title>RIZZTER Crypto - It's RIZZTER Till Easter</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Підключення CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <img src="assets/rizzter-logo.png" alt="RIZZTER Logo" class="logo" loading="lazy">
+    <img src="assets/rizzter-logo.png" alt="RIZZTER Logo" class="logo" loading="lazy" />
   </header>
-
+  
+  <!-- Основний контент -->
   <main class="container">
     <h1>RIZZTER Crypto</h1>
     <p class="slogan">"IT'S RIZZTER TILL EASTER"</p>
     <p>Join the revolution of RIZZTER Crypto! The coolest way to invest, trade, and ride the waves of crypto success.</p>
-
-    <!-- Countdown Timer -->
+    
+    <!-- Таймер відліку -->
     <div id="countdown" class="countdown">
       <h2>Countdown to Easter 2025</h2>
       <div id="timer">Loading countdown...</div>
     </div>
-
+    
+    <!-- Кнопка, що викликає банер і конфетті -->
     <button class="cta-button" id="joinBtn">WHAT TIME IS IT</button>
-
-    <!-- Memes Section -->
+    
+    <!-- Секція мемів -->
     <section class="memes">
-      <img src="assets/rizzter-meme1.png" alt="RIZZTER Meme 1" loading="lazy">
-      <img src="assets/rizzter-meme2.png" alt="RIZZTER Meme 2" loading="lazy">
-      <img src="assets/rizzter-meme3.png" alt="RIZZTER Meme 3" loading="lazy">
-      <img src="assets/rizzter-meme4.png" alt="RIZZTER Meme 4" loading="lazy">
+      <img src="assets/rizzter-meme1.png" alt="RIZZTER Meme 1" loading="lazy" />
+      <img src="assets/rizzter-meme2.png" alt="RIZZTER Meme 2" loading="lazy" />
+      <img src="assets/rizzter-meme3.png" alt="RIZZTER Meme 3" loading="lazy" />
+      <img src="assets/rizzter-meme4.png" alt="RIZZTER Meme 4" loading="lazy" />
     </section>
   </main>
-
+  
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 RIZZTER Crypto. All rights reserved.</p>
   </footer>
-
-  <!-- Giant Banner -->
+  
+  <!-- Банер -->
   <div id="banner" class="banner">ITS RIZZTER TIME</div>
-
-  <!-- Easter Extras -->
+  
+  <!-- Полотно для конфетті -->
+  <canvas id="confettiCanvas"></canvas>
+  
+  <!-- Easter Extras (Кролик та яйця) -->
   <div id="easterExtras">
-    <img src="assets/easter-bunny.png" alt="Easter Bunny" class="bunny">
-    <img src="assets/easter-egg1.png" alt="Easter Egg" class="egg egg1">
-    <img src="assets/easter-egg2.png" alt="Easter Egg" class="egg egg2">
-    <img src="assets/easter-egg3.png" alt="Easter Egg" class="egg egg3">
+    <img src="assets/easter-bunny.png" alt="Easter Bunny" class="bunny" />
+    <img src="assets/easter-egg1.png" alt="Easter Egg" class="egg egg1" />
+    <img src="assets/easter-egg2.png" alt="Easter Egg" class="egg egg2" />
+    <img src="assets/easter-egg3.png" alt="Easter Egg" class="egg egg3" />
   </div>
-
-  <!-- JavaScript Files -->
+  
+  <!-- Чатбот -->
+  <div id="chatbot-container" class="chatbot-container">
+    <div class="chat-header">
+      <span>Chatbot</span>
+      <button id="closeChat" class="close-chat">&times;</button>
+    </div>
+    <div id="chat-messages" class="chat-messages">
+      <!-- Повідомлення чатбота з’являтимуться тут -->
+    </div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  
+  <!-- Кнопка для відкриття чатбота -->
+  <button id="openChat" class="open-chat">Chat</button>
+  
+  <!-- Підключення JavaScript -->
   <script src="js/countdown.js"></script>
   <script src="js/confetti.js"></script>
   <script src="js/script.js"></script>
