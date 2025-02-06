@@ -1,0 +1,44 @@
+:root {
+  --primary-bg: #121212;
+  --primary-color: #ffffff;
+  --accent-color: #ffcc00;
+  --accent-hover: #e6b800;
+  --secondary-bg: #222;
+}
+
+/* Background Animation */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(-45deg, #121212, #1a1a1a, #121212, #1a1a1a);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container { max-width: 800px; margin: auto; padding: 20px; }
+
+.cta-button {
+  background-color: var(--accent-color);
+  color: black;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cta-button:hover { background-color: var(--accent-hover); }
+
+/* Countdown */
+.countdown { background-color: var(--secondary-bg); padding: 15px; border-radius: 10px; }
+
+/* Banner */
+.banner { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; font-size: 5rem; }
