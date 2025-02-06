@@ -270,7 +270,7 @@ footer {
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 1100;
+  z-index: 1200; /* Increased to ensure it's on top */
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
