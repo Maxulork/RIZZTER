@@ -274,21 +274,25 @@ footer {
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-/* X Logo Button using an image */
-.x-logo-btn {
+/* Style for the link container if needed */
+.x-logo-link {
   display: inline-block;
-  width: 40px;               /* Adjust size as needed */
-  height: 40px;
   border-radius: 50%;
-  background: url('assets/x-logo.png') no-repeat center center;
-  background-size: contain;  /* Ensure the logo fits inside the button */
-  text-decoration: none;
+  overflow: hidden; /* Ensures the image stays within a circular frame */
   transition: transform 0.3s ease;
+  margin-left: 10px; /* Optional spacing */
 }
 
-.x-logo-btn:hover {
+/* Style for the image */
+.x-logo-img {
+  display: block;
+  width: 40px;  /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
+
+/* Hover effect on the link */
+.x-logo-link:hover {
   transform: scale(1.1);
 }
-
 
 
