@@ -274,23 +274,27 @@ footer {
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-/* X Logo Button using text */
+/* X Logo Button using an image */
 .x-logo-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   width: 40px;               /* Adjust size as needed */
   height: 40px;
   border-radius: 50%;
-  background-color: var(--accent-color);
-  color: black;
-  font-weight: bold;
-  font-size: 1.5rem;
+  background: url('assets/x-logo.png') no-repeat center center;
+  background-size: contain;  /* Ensures the logo fits inside the button */
   text-decoration: none;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
+  margin-left: 10px;         /* Optional spacing between the logo and the button */
 }
 
 .x-logo-btn:hover {
   transform: scale(1.1);
 }
+
+/* Optional: Styling the container if needed */
+.social-links {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
