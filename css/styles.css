@@ -276,16 +276,15 @@ footer {
 }
 .x-logo-btn {
   display: inline-block;
-  width: 40px;               
+  width: 40px;               /* Adjust size as needed */
   height: 40px;
   border-radius: 50%;
   background: url('../assets/x-logo.png') no-repeat center center;
-  background-size: contain;
-  /* Remove or comment out any fallback color if not needed */
-  /* background-color: transparent; */
+  background-size: contain;  /* Ensures the logo fits inside the button */
+  background-color: transparent;  /* Ensure no fallback color is visible */
   text-decoration: none;
   transition: transform 0.3s ease;
-  margin-left: 10px;
+  margin-left: 10px;         /* Optional spacing */
 }
 
 .x-logo-btn:hover {
