@@ -274,3 +274,23 @@ footer {
   font-weight: bold;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+/* X Logo Button using text */
+.x-logo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;               /* Adjust size as needed */
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.x-logo-btn:hover {
+  transform: scale(1.1);
+}
+
